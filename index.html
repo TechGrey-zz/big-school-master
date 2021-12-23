@@ -2,18 +2,53 @@
 
 <html>
     <head>
-        <link href="styles.css" rel="stylesheet">
+        <link rel="stylesheet", type="text/css", href="style.css"/>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+        <body style="background-color: #f4f7ff;"></body>
+
         <title>Big School Beta</title>
+
+        <meta name="theme-color" content="#f4f7ff">
+
+        <!-- <meta name="theme-color" content="#001652" media="prefers-color-scheme: dark"> -->
     </head>
 
     <body>
-        <h1>
-            Hello, world!
-        </h1>
+        <div class="home">
+            
+            <div class="homeTitle", style="margin-top: 10px;">
 
-        <p>
-            This app is purely a website that's been built with Electron, a multi-platform device.
-        </p>
+                <div class="spacer"></div>
+
+                <h1>
+                    Hello, Elliott.
+                </h1>
+    
+                <h2>
+                    Here's what's happening today.
+                </h2>
+            </div>
+
+            <div class="timetableTile">
+
+                <h3>
+                    Timetable for Today
+                </h3>
+                
+                <h4>
+                    You have work due on the 28/01 for Physics.
+                </h4>
+
+                <div class="spacer"></div>
+
+            </div>
+        </div>
 
         <script src="./renderer.js"></script>
     </body>
