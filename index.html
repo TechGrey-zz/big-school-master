@@ -10,7 +10,7 @@
 
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-        <body style="background-color: #f4f7ff;"></body>
+        <body style="background-color: #F4F7FF;"></body>
 
         <title>Big School Beta</title>
 
@@ -20,14 +20,55 @@
     </head>
 
     <body>
+
+        <header>
+
+            <div class="headerButton">
+                <h5>
+                    Classes
+                </h5>
+            </div>
+
+            <div class="headerButton">
+                <h5>
+                    Due Work
+                </h5>
+            </div>
+
+            <div class="headerButton">
+
+                <a href="/grades_main.html">Grades</a>
+
+            </div>
+
+            <div class="headerButton">
+                <h5>
+                    Calendar
+                </h5>
+            </div>
+
+            <div class="headerButton">
+                <h5>
+                    Software
+                </h5>
+            </div>
+
+            <div class="headerButton" style="margin-right: 0px;">
+                <h5>
+                    Routines
+                </h5>
+            </div>
+
+        </header>
+
         <div class="home">
             
-            <div class="homeTitle", style="margin-top: 10px;">
+            <div class="mainTitle", style="margin-top: 10px; background-image: url('https://images.unsplash.com/photo-1518306532653-7da37fecf8d1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80')">
 
                 <div class="spacer"></div>
 
                 <h1>
-                    Hello, Elliott.
+                    Hello, Adam.
                 </h1>
     
                 <h2>
@@ -35,19 +76,165 @@
                 </h2>
             </div>
 
-            <div class="timetableTile">
+            <!-- Timetable Row -->
 
-                <h3>
-                    Timetable for Today
-                </h3>
-                
-                <h4>
-                    You have work due on the 28/01 for Physics.
-                </h4>
+            <div id="flexRow", class="row">
 
-                <div class="spacer"></div>
+                <div class="tile">
 
+                    <h3>
+                        Timetable for Today
+                    </h3>
+                    
+                    <h4 style="margin-bottom: 10px;">
+                        You have work due on the 28/01 for Physics.
+                    </h4>
+    
+                    <div class="verticalTimetableView">
+
+                        <div class="timetableTile" style="background-color: #0673C6;">
+                            <h4 style="font-weight: bold;">
+                            Year 12 Mathematics
+                            </h4>
+    
+                            <h4>
+                                09:00 - 09:50
+                            </h4>
+                        </div>
+    
+                        <div class="timetableTile" style="background-color: #F5BE29;">
+                            <h4 style="font-weight: bold;">
+                            Year 12 Digital Technology
+                            </h4>
+    
+                            <h4>
+                                09:55 - 10:45
+                            </h4>
+                        </div>
+    
+                        <div class="timetableTile" style="background-color: #0673C6;">
+                            <h4 style="font-weight: bold;">
+                            Year 12 Chemistry
+                            </h4>
+    
+                            <h4>
+                                11:05 - 11:55
+                            </h4>
+                        </div>
+                        
+                        <div class="timetableTile" style="background-color: #F5BE29;">
+                            <h4 style="font-weight: bold;">
+                            Year 12 Design and Visual Communication
+                            </h4>
+    
+                            <h4>
+                                12:00 - 12:50
+                            </h4>
+                        </div>
+    
+                        <div class="timetableTile" style="background-color: #0673C6;">
+                            <h4 style="font-weight: bold;">
+                            Year 12 Physics
+                            </h4>
+    
+                            <h4>
+                                13:50 - 14:40
+                            </h4>
+                        </div>
+    
+                        <div class="timetableTile" style="background-color: #B0413E;">
+                            <h4 style="font-weight: bold;">
+                            Year 12 English
+                            </h4>
+    
+                            <h4>
+                                14:45 - 15:35
+                            </h4>
+                        </div>
+                    </div>
+    
+                </div>
+
+                <!-- Due Work Tile -->
+
+                <div class="tile" style="margin-left: 20px;">
+
+                    <h3>
+                        Due Work
+                    </h3>
+                    
+                    <h4 style="margin-bottom: 10px;">
+                        You have work due soon.
+                    </h4>
+    
+                    <div class="dueWorkTile" style="background-color: #0673C6;">
+                            
+                        <h4 style="font-weight: bold;">
+                            Calculus Derived Grade
+                        </h4>
+
+                        <h4>
+                            Happening on Thursday during class.
+                        </h4>
+
+                        </div>
+    
+                        <div class="dueWorkTile" style="background-color: #F5BE29;">
+
+                            <h4 style="font-weight: bold;">
+                                Programming Internal
+                            </h4>
+
+                            <h4>
+                                Due Tuesday, 13:00.
+                            </h4>
+
+                        </div>
+    
+                        <div class="dueWorkTile" style="background-color: #0673C6;">
+
+                            <h4 style="font-weight: bold;">
+                                Molecules Internal
+                            </h4>
+
+                            <h4>
+                                Due next Wednesday, 11:00.
+                            </h4>
+
+                        </div>
+    
+                </div>
             </div>
+
+            <div id="row" class="row">
+
+                <!-- Notifications Tile -->
+
+                <div class="tile">
+
+                    <h3>
+                        Latest Notifications
+                    </h3>
+                    
+                    <h4 style="margin-bottom: 10px;">
+                        You have multiple unread messages.
+                    </h4>
+    
+                    <div class="verticalTimetableView">
+
+                        <div class="notificationTile" style="background-color: gray;">
+                            <h4 style="font-weight: bold;"> Mr Matt Thatcher posted about "Athletics Day 2022"</h4>
+
+                            <h4>
+                                "Welcome back everyone, Athletics Day is happening..."
+                            </h4>
+                        </div>
+                    </div>
+    
+                </div>
+                
+            </div>
+
         </div>
 
         <script src="./renderer.js"></script>
