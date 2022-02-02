@@ -2,10 +2,13 @@ html * {
     font-family: 'Poppins', sans-serif;
 }
 
-/* <DIV> TAGS */
+#flexRow .tile {
+    width: 50%;
+}
 
-.loginTitle {
-    font-size: 100px;
+#flexRow {
+    display: flex;
+    align-items: stretch;
 }
 
 /* HOME TITLE */
@@ -31,17 +34,6 @@ html * {
     color: white;
 }
 
-/* FLEX ROW */
-
-#flexRow .tile {
-    width: 50%;
-}
-
-#flexRow {
-    display: flex;
-    align-items: stretch;
-}
-
 /* TILE */
 
 .tile {
@@ -52,18 +44,11 @@ html * {
     margin-top: 20px;
 }
 
-
-
-/* @media (max-width: 750) {
-    .tile {
-        display: block;
-    }
-} */
-
 .tile h3 {
     margin-top: 5px;
     margin-left: 0px;
     margin-bottom: 5px;
+	color: #FFFFFF;
 }
 
 .tile h4 {
@@ -75,9 +60,9 @@ html * {
     color: red;
 }
 
-/* TIMETABLE TILE */
+/* GRADE TILE */
 
-.timetableTile {
+.gradeTile {
     border-radius: 20px;
     margin-bottom: 10px;
 
@@ -85,60 +70,34 @@ html * {
     flex-direction: row;
     flex-wrap: wrap;
 
-    border: #EAEAEA;
+    border: #000000;
+	background-color: #FFFFFF;
     border-style: solid;
+	
 
     justify-content: space-between;
+	align-items: center;
     box-shadow: 0px 0px 20px gray;
 
 }
 
-.timetableTile h4 {
-    color: white;
+.gradeTile h4 {
+    color: #000000;
     font-weight: normal;
     margin: 10px;
     margin-left: 20px;
 }
 
-.timetableTile:hover {
-    border: white;
-    border-style: solid;
+.gradeTile #gradeIcon {
+	padding: 10px;
+	color: #FFFFFF;
+	border-radius: 20px;
+	font-weight: 500;
 }
 
-/* DUE WORK TILE */
-
-.dueWorkTile {
-    padding: 10px;
-    border-radius: 20px;
-    margin-bottom: 10px;
-    
+.gradeTile:hover {
     border: #EAEAEA;
     border-style: solid;
-}
-
-.dueWorkTile h4 {
-    color: white;
-    font-weight: normal;
-    margin: 10px;
-
-}
-
-/* NOTIFICATION TILE */
-
-.notificationTile {
-    padding: 10px;
-    border-radius: 20px;
-    margin-bottom: 10px;
-    
-    border: #EAEAEA;
-    border-style: solid;
-}
-
-.notificationTile h4 {
-    color: white;
-    font-weight: normal;
-    margin: 10px;
-
 }
 
 /* SPACER */
